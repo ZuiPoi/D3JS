@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>WWII Deaths Visualized</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="./lib/d3.min.js"></script>
+    <script src="./lib/d3-fetch.min.js"></script>
+    <script src="https://unpkg.com/topojson@3.0.2/dist/topojson.min.js"></script>
+
+  </head>
+  <body>
+    <svg class="legend" id="my_dataviz2" height=300 width=450></svg>
+    <svg id="my_dataviz1" width="1200" height="625"></svg>
+
+<!--960 / 500--> 
+    <script src="index.js"></script>
+    </svg>
+
+    <div>
+    <h2> Data sets available</h2>
+      <p>
+
+        <input type="radio" class="radio_item" id="no2" name="set1" value="Civilianonly" onclick="updateData1('CivDeath','')">
+        <label class="label_item" for="Civilianonly" >Civilian only</label>
+
+      </p>
+
+      <p>
+        <input type="radio" class="radio_item" id="no3" name="set1" value="MilitaryOnly"onclick="updateData1('MilDeath','')">
+        <label class="label_item" for="MilitaryOnly" >Military Only</label>
+      </p>
+      
+      <p>
+      <input type="radio" class="radio_item" id="no4" name="set1" value="total" onclick="updateData1('TotalDeath','')">
+      <label class="label_item" for="total">Total</label>
+      </p>
+    </div>
+
+    <div>
+      <h2> Dispay As  % or value</h2>
+      <p>
+        <input type="radio" class="radio_item" id="no5" name="set2" value="AsPercent" onclick="updatePercent(0)">
+        <label class="label_item" for="AsPercent" >Show as %</label>
+      </p> 
+      <p>
+        <input type="radio" class="radio_item" id="no6" name="set2" value="NotAsPercent" onclick="updatePercent(1)">
+        <label class="label_item" for="NotAsPercent" >Show as Value</label>
+      </p>
+    </div>
+    
+    
+
+    <div>
+    <h2> Totals of all countries</h2>
+      <input name="Total" 
+             type="button" 
+             value="In numbers" 
+             onclick="updateData6()" />
+    </div>
+    <div>
+    <h2> Deaths on the world map</h2>
+      <input name="Total" 
+             type="button" 
+             value="View as heatmap" 
+             onclick="updateData5()" />
+
+      <input name="Total" 
+             type="button" 
+             value="View as Circlemap" 
+             onclick="updateData7()" />
+    </div>
+
+  </body>
+</html>

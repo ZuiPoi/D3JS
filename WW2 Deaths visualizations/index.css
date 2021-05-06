@@ -1,0 +1,78 @@
+body {
+    align-items: left;
+    background-color: black;
+  }
+
+svg{
+    font-style: bold;
+    color :white;
+    border-style: solid;
+    border-color: white;
+    align-items: left;
+    background-color: black;
+}
+.legend{
+  font-style: bold;
+  background-color: white;
+}
+.map{
+  background-color: steelblue;
+}
+
+.titleof{
+  color : white;
+}
+p{
+  display: block;
+  background-color: grey;
+  border-style: solid;
+  text-decoration: block;
+
+}
+.axis line{
+  stroke: white;
+  fill: white;
+}
+
+.axisY line{
+  stroke: white;
+}
+
+.axisY path{
+  stroke: white;
+}
+
+.axisY text{
+  fill: white;
+} 
+
+.axisX line{
+  stroke: white;
+}
+
+.axisX path{
+  stroke: white;
+}
+
+.axisX text{
+  fill: white;
+}  
+h2{
+    background-color: steelBlue;
+    border-style: solid;
+}
+div {
+
+    border-style: solid;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+text{
+    font-size: 1.4em;
+
+}
+
